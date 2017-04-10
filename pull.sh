@@ -34,7 +34,7 @@ eval `ssh-agent -s`
 ssh-add deploy_key
 
 # Now that we're all set up, we can push.
-gti remote add dest $REPO
+git remote add dest $REPO
 git push dest $TARGET_BRANCH
 popd
 
