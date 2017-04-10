@@ -35,5 +35,6 @@ ssh-add deploy_key
 # Now that we're all set up, we can push.
 git remote add dest ${SSH_REPO}
 git push dest $TARGET_BRANCH
+git show-ref
 popd
 
