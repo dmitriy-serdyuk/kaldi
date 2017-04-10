@@ -19,7 +19,6 @@ SHA=`git rev-parse --verify HEAD`
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
 git clone ${KALDI_MASTER} kaldi-master
 pushd kaldi-master
-#git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
