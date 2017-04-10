@@ -1,0 +1,7 @@
+language: generic # don't install any environment
+
+script: bash ./pull.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "3df052b78e11"
+  - COMMIT_AUTHOR_EMAIL: "serdyuk.dmitriy@gmail.com"
