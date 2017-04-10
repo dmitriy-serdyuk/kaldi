@@ -2,7 +2,7 @@
 set -e # Exit with nonzero exit code if anything fails
 
 KALDI_MASTER="https://github.com/kaldi-asr/kaldi"
-TARGET_BRANCH="master"
+TARGET_BRANCH="code"
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
